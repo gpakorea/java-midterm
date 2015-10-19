@@ -21,9 +21,10 @@ public {
      * Feel free to CUT/COPY/PASTE these directions into your NEW file
      * 
      * Create (construct) a new Test object that will:
-     *     1) ask the User some (simple) questions (like "what color is the sky?")
-     *     2) check their answers
-     *     3) print out a grade based on their passing percent
+     *     1) initialize ALL variables in the Constructor
+     *     2) ask the User some (simple) questions (like "what color is the sky?")
+     *     3) check their answers
+     *     4) print out a grade based on their passing percent
      * 
      * All variables should be PRIVATE
      * variables: 1. String array questions[]   => that holds 2+ questions for your "Test"
