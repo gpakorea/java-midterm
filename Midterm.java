@@ -1,19 +1,22 @@
 /*
- * Midterm.java
- * Write our normal 4-line documentation here (with your name, etc)
+ * Project: ***
+ * Description: ***
+ * Name: ***
+ * Date: ***
  */
 
 // You will need a Scanner object
+import ***;
 
 /*
  * Begin the class here
  */
-public {
+public class *** {
   
   /*
    * Begin the main method here
    */
-  public {
+  public *** main( *** ){
    
     // STEP 1: Create a NEW 'Test' object in a NEW 'Test.java' file (details below)
     /*
@@ -29,7 +32,7 @@ public {
      * All variables should be PRIVATE
      * variables: 1. String array questions[]   => that holds 2+ questions for your "Test"
      *            2. String array answers[]     => that hold the RIGHT answers for your "Test"
-     *            3. String array answersUser[] => that WILL hold 2+ answers for your "Test"
+     *            3. String array answersUser[] => that WILL hold 2+ answers for your "Test" (tell it how many items to store)
      *            4. int score                  => that holds the total number of correct answers
      *            5. double grade               => that holds the User's grade percentage
      * 
@@ -40,29 +43,43 @@ public {
      *                c) ask them to the user
      *                d) read in user input
      *                e) store the user input in the answers[] array
-     *            2. chkAnswers() that will:
+     *                f) IMMEDIATELY calls a static chkAnswer() method to see if you are right or wrong
+     * 
+     *            2. static chkAnswer( String, int ) that will: 
+     *                a) receive the String from the user input + the i value for the array index
+     *                b) compares the String with answers[int] (use IF/ELSE)
+     *                    i)   IF correct (the same), print "Your answer is RIGHT!"
+     *                    ii)  ELSE IF correct but the wrong case print "Your answer is kind of right..."
+     *                    iii) ELSE (incorrect), print "Your answer is WRONG!"
+     * 
+     *            3. chkAnswers() that will:
      *                a) loop through the answersUser[] array (use a WHILE loop)
      *                b) compares each answersUser[] with answers[] (use IF/ELSE)
      *                    i)   IF correct (the same), add 2 POINTS to their score
      *                    ii)  ELSE IF correct but the wrong case (upper/lower), add 1 POINT to their score
      *                    iii) ELSE (incorrect), SUBTRACT 1 point from their score
-     *            3. double calcGrade() that will:
-     *                a) RETURN a typecast (double) value of their score
-     *                b) divide the total score by the number of questions[] to find this
-     *            4. printGrade( double ) that will:
-     *                a) accept a numeric score (percent)
-     *                b) use a SWITCH statement to RETURN 'A', 'B', 'C', 'D', or 'F' based on the score
+     * 
+     *            3. char calcGrade() that will:
+     *                a) set grade to the score / questions * 2 (also make it a percent *100)
+     *                b) print their grade as a percent out of 100
+     *                c) RETURN a char value with the letter of their grade
+     * 
+     *            4. printGrade( char ) that will:
+     *                a) accept a Letter grade 
+     *                b) use a SWITCH statement to print a comment based on the Letter grade
      */
     
-    // STEP 2: Initialize a Scanner() object here
+    // STEP 2: Initialize your Test() object here
+    Test *** = new Test();
     
-    // STEP 3: Initialize your Test() object here
+    // STEP 3: askQuestions() here
+    ***.askQuestions();
     
-    // STEP 4: askQuestions( Scanner ) here - pass in your Scanner object
+    // STEP 4: chkAnswers() here
+    ***.chkAnswers();
     
-    // STEP 5: chkAnswers() here
-    
-    // STEP 6: Print the grade here < use System.out.println( printGrade( calcGrade() ) ); >
+    // STEP 6: Print the grade here
+    ***.printGrade( ***.calcGrade() );
     
   } // END main method
   
